@@ -60,11 +60,39 @@ This histogram below shows the Medium Outlet Size has more sales than the other 
 This lineplot shows that Supermarket type 3 has the most sales compared to the Grocery store which has the lowest of all.
 
 
- ### Maching Learning Using the Following Models:
-    - Linear Regression Model
-    - Decision Tree Regressor Model
+### Maching Learning:Linear Regression Model:
+    The data was preprocessed before fitting and testing with the machine learning models, however this data was not scaled. 
+    - A Linear Regression model was fitted on the training data and was able to account for about 56% on the testing data.
+   <p align = "center">
+    <img src = "https://github.com/RosaR02/Sales-Predictions/blob/main/screenshots/top3largestcoefficients.png">
+   </p>
 
-    
+The three largest coefficients plotted are listed above. This means their coefficients can be interpreted as to how much the target changes. The Target is sales prediction. The three categories are as follows (largest to smallest):
+
+*  Outlet_Type_Supermarket Type3 - the sales will increase by 1598.10 Rupees
+*  Item_Visibility- the sales will decrease by 268.41 Rupees
+*  Outlet_Type_Grocery Store - the sales will decrease by 1714.27 Rupees
+
+### Maching Learning:Random Forest Regresson Model:
+    - A Random Forest Regressor model was fitted on the training data and was able to account for about 56% on the testing data.
+
+  <p align = "center">
+    <img src = "https://github.com/RosaR02/Sales-Predictions/blob/main/screenshots/top5mostimportant-features.png">
+   </p>
+
+  Top 5 most important features:
+
+*  Outlet_Type_supermarket Type1
+
+*  Item_Type_Breakfast
+
+*  Outlet_Type_Supermarket Type2
+  
+*  Item_Type_Others
+  
+*  Item_Type_Seafood
+
+ 
     
 ## Models Evaluated & Results
 
