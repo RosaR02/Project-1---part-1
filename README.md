@@ -61,8 +61,9 @@ This lineplot shows that Supermarket type 3 has the most sales compared to the G
 
 
 ### Maching Learning:Linear Regression Model:
-    The data was preprocessed before fitting and testing with the machine learning models, however this data was not scaled. 
-    - A Linear Regression model was fitted on the training data and was able to account for about 56% on the testing data.
+The data was preprocessed before fitting and testing with the machine learning models, however this data was not scaled. 
+A Linear Regression model was fitted on the training data and was able to account for about 56% on the testing data.
+
    <p align = "center">
     <img src = "https://github.com/RosaR02/Sales-Predictions/blob/main/screenshots/top3largestcoefficients.png">
    </p>
@@ -74,26 +75,25 @@ The three largest coefficients plotted are listed above. This means their coeffi
 *  Outlet_Type_Grocery Store - the sales will decrease by 1714.27 Rupees
 
 ### Maching Learning:Random Forest Regresson Model:
-    - A Random Forest Regressor model was fitted on the training data and was able to account for about 56% on the testing data.
+A Random Forest Regressor model was fitted on the training data and was able to account for about 56% on the testing data.
 
   <p align = "center">
-    <img src = "https://github.com/RosaR02/Sales-Predictions/blob/main/screenshots/top5mostimportant-features.png">
+    <img src = "images/top5mostimportantfeatures.png">
    </p>
 
-  Top 5 most important features:
+Top 5 most important features:
 
-*  Outlet_Type_supermarket Type1
+* Item_MRP
 
-*  Item_Type_Breakfast
+* Outlet_Type_Grocery Store
 
-*  Outlet_Type_Supermarket Type2
-  
-*  Item_Type_Others
-  
-*  Item_Type_Seafood
+* Item_Visibility
 
- 
-    
+* Outlet_Type_Supermarket Type3
+
+* Item_Weight
+
+     
 ## Models Evaluated & Results
 
 - Linear Regression Model (Testing Set):
