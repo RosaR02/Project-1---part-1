@@ -79,7 +79,7 @@ A Random Forest Regressor model was fitted on the training data and was able to 
 
   <p align = "center">
     <img src = "images/top5mostimportantfeatures.png">
-   </p>
+  </p>
 
 Top 5 most important features:
 
@@ -93,7 +93,43 @@ Top 5 most important features:
 
 * Item_Weight
 
-     
+
+
+## Summary Bar Plot: Random Forest
+Shap values includes the values for each feature.
+
+  <p align = "center">
+    <img src = "images/RFShapbarplot.png">
+  </p>
+
+According to SHAP the most important features are the:
+
+* Item_MRP
+* Outlet_Type_Grocery_Store
+* Outlet_Type_Supermarket Type3
+* Outlet_Establishment_Year
+* Item_Visibility
+
+Both of these Models have 4 out of 5 features that are the same. The difference with the SHAP model is the Outlet_Establishment_year feature is of higher importance than the Item_Weight.
+
+
+## SHAP Dot Plot for Random Forest Model
+  <p align = "center">
+    <img src = "images/RFShapDotplot.png">
+   </p>
+
+According to the SHAP Dot Plot the top 3 most important features are:
+* Item_MRP - Item_MRP had the largest effect on the model's predictions (since it was the first bar at the top of the graph).
+    - Because red values are on the right (positive), we can see the greater the number of sales, the more likely the model would predict the drive up sales.
+
+
+* Outlet_Type_Grocery_Store - Because the red dots are on the left (negative) we can see that the grocery store has a decline in sales, this model will predict this outlet type yo have lower sales.
+
+
+* Outlet_Type_Supermarket Type3 - Notice that the blue dots (fewer failures) are only slightly to the left of the 0-line, indicating that the model is only slightly less likely to predict lower sales, compared to the big impact of having a large number of sales.
+
+These are the same top 3 features as the RF Shap bar plot.
+
 ## Models Evaluated & Results
 
 - Linear Regression Model (Testing Set):
