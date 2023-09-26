@@ -120,13 +120,13 @@ Both of these Models have 4 out of 5 features that are the same. The difference 
 
 According to the SHAP Dot Plot the top 3 most important features are:
 * Item_MRP - Item_MRP had the largest effect on the model's predictions (since it was the first bar at the top of the graph).
-    - Because red values are on the right (positive), we can see the greater the number of sales, the more likely the model would predict the drive up sales.
+Because red values are on the right (positive), we can see the greater the price per item, the more likely the model would predict to generate more sales.
 
 
-* Outlet_Type_Grocery_Store - Because the red dots are on the left (negative) we can see that the grocery store has a decline in sales, this model will predict this outlet type yo have lower sales.
+* Outlet_Type_Grocery_Store - Because the red dots are on the left (negative) we can see that the grocery store has a decline in sales per item, this model will predict this outlet type to have fewer sales per item than Supermarket Type3.
 
 
-* Outlet_Type_Supermarket Type3 - Notice that the blue dots (fewer failures) are only slightly to the left of the 0-line, indicating that the model is only slightly less likely to predict lower sales, compared to the big impact of having a large number of sales.
+* Outlet_Type_Supermarket Type3 - Notice that the blue dots (fewer ) are only slightly to the left of the 0-line, indicating that the model is only slightly less likely to predict lower sales per item, compared to the big impact of having a large number of sales per item.
 
 These are the same top 3 features as the RF Shap bar plot.
 
