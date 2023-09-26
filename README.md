@@ -70,9 +70,9 @@ A Linear Regression model was fitted on the training data and was able to accoun
 
 The three largest coefficients plotted are listed above. This means their coefficients can be interpreted as to how much the target changes. The Target is sales prediction. The three categories are as follows (largest to smallest):
 
-*  Outlet_Type_Supermarket Type3 - the sales will increase by 1598.10 Rupees
-*  Item_Visibility- the sales will decrease by 268.41 Rupees
-*  Outlet_Type_Grocery Store - the sales will decrease by 1714.27 Rupees
+*  Outlet_Type_Supermarket Type3 - For every Rupee increase in an item's MRP the model predicts a 1598.10 increase in revenue for that product.
+*  Item_Visibility- For Items with less visibility on display the model is predicting it will bring in 268.41 fewer Rupees than if it had a larger display.
+*  Outlet_Type_Grocery Store - if an item sold at a grocery store, the model is predicting to bring in 1714.27 fewer Rupees in revenue than if it sold at a Supermarket Type3.
 
 ### Maching Learning:Random Forest Regresson Model:
 A Random Forest Regressor model was fitted on the training data and was able to account for about 56% on the testing data.
