@@ -130,31 +130,80 @@ Because red values are on the right (positive), we can see the greater the price
 
 These are the same top 3 features as the RF Shap bar plot.
 
-## Models Evaluated & Results
+## Example A - Item_MRP Individual Force Plot
+  This feature was selected since it was the top most important feature on both the bar and Dot plot.
+  
+  <p align = "center">
+    <img src = "screenshot/ForceplotItemMRP.png">
+   </p>
 
-- Linear Regression Model (Testing Set):
-  - MAE: 805.5906 
-  - MSE: 1,198,635.9796 
-  - RMSE: 1,094.8224 
-  - R2: 0.5656
+### Interpretation of Individual Force Plot
 
-- Decision Tree Regressor Model (Testing Set):
-  - MAE: 1,036.6259 
-  - MSE: 2,205,788.3951 
-  - RMSE: 1,485.1897 
-  - R2: 0.2005
+* Base value suggest 3451.83 Rupees in sales
 
+* Item_MRP, with the value of 264.7, is pushing the prediction toward a higher value (red bar).
 
+* Outlet_Type_Groery_Store = 0 (item not sold at Grocery Store) is also pushing the prediction toward a higher value possibly because items not carried at Grocery store and have a higher value when sold at other Outlet Types.
+
+* Outlet_Establishment_Year = 2009 is pushing the prediction toward a lower value which means store presentation can have an impact on sales.
+  
+### Example A - Lime: Random Forest Local Explanation
 
 
-- The Final Model Chosen was a Linear Regression Model.
+  <p align = "center">
+    <img src = "screenshot/limeexpItemMRP">
+   </p>
+
+### Interpretation of LIME table
+
+The model predicts this feature has a sales value of 3451.83
+
+There are several features that were associated with price increased and the following features have the most significant impact:
+
+* Outlet_Type_Grocery Store Value = 0, which means item is not being sold at grocery store actually helps increase sale prices at other Outlet Types .
+
+* Item_MRP predicted 179.52, where in reality this sample has Item_MRP listed at 264.72 per item.
+
+* Item_Visibility also plays a roll on item sales with a value of 0.03 meaning the way the item is displayed at the store can drive up sales opposed if its hidden at the back of the shelf.
+
+## Example B - Outlet_Type_Supermarket Type3
+This feature was selected since it was the 3rd most important feature on both the bar and Dot plot.
+
+ <p align = "center">
+    <img src = "screenshot/ForceplotOutletType">
+   </p>
+
+## Example B- Interpretation of Individual Force Plot
+
+* Base value 2155 while the predicted value is much higher at 3702.05
 
 
+* Outlet_Type_Supermarket Type3 = 1 - As you can see, this is the most important feature with the largest negative effect.
 
-## Recommendations
+    * Visually, the color with the wider bar "wins", and this decides the prediction
 
-Model Performance
-- Overall, the best model is definitely the Linear Regression Model. The difference between the test score and training score was insignificant and by far it outperformed the Decision Tree Regressor model. 
+* Outlet_Type_Groery_Store = 0 - has contributed negatively to sales per item.
+
+* Outlet_Establishment_Year = 1985 - the year this establishment was opened also has a negative effect. 
+
+
+### Example B- Lime: Random Forest Local Explanation
+
+ <p align = "center">
+    <img src = "screenshot/limeexpOutletType">
+   </p>
+
+### Example B- Interpretation of LIME table
+
+The model predicts this feature has a sales value of 3702.05
+
+
+The top 3 most impactful features were associated in a positive way:
+* Outlet_Type_Grocery Store <= 0 - actually has 0
+
+* Outlet_Type_Supermarket Type3 >0 actually has 0
+
+* Outlet_Establishment_Year <= 1987 actually is 1985
 
 
 ## Limitations & Next Steps
