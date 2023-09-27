@@ -134,7 +134,7 @@ These are the same top 3 features as the RF Shap bar plot.
   This feature was selected since it was the top most important feature on both the bar and Dot plot.
   
   <p align = "center">
-    <img src = "screenshot/ForceplotItemMRP.png">
+    <img src = "screenshots/ForceplotItemMRP.png">
    </p>
 
 ### Interpretation of Individual Force Plot
@@ -151,8 +151,8 @@ These are the same top 3 features as the RF Shap bar plot.
 
 
   <p align = "center">
-    <img src = "screenshot/limeexpItemMRP">
-   </p>
+    <img src = "screenshots/limeexpItemMRP.png">
+  </p>
 
 ### Interpretation of LIME table
 
@@ -170,8 +170,8 @@ There are several features that were associated with price increased and the fol
 This feature was selected since it was the 3rd most important feature on both the bar and Dot plot.
 
  <p align = "center">
-    <img src = "screenshot/ForceplotOutletType">
-   </p>
+    <img src = "screenshots/ForceplotOutletType.png">
+ </p>
 
 ## Example B- Interpretation of Individual Force Plot
 
@@ -190,8 +190,8 @@ This feature was selected since it was the 3rd most important feature on both th
 ### Example B- Lime: Random Forest Local Explanation
 
  <p align = "center">
-    <img src = "screenshot/limeexpOutletType">
-   </p>
+    <img src = "screenshots/limeexpOutletType.png">
+ </p>
 
 ### Example B- Interpretation of LIME table
 
